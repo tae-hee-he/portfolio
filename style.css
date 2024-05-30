@@ -1,0 +1,251 @@
+@font-face {
+    font-family: machina;
+    src: url(./PPNeueMachina-PlainRegular.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+header{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color:rgba(14, 14, 14, 1);
+}
+header>.title{
+    color: #f8f8f8;
+    font-family: machina;
+    position: absolute;
+    font-size: 160px;
+    top: 56px; 
+    left: 50px;
+    letter-spacing :-0.045em;
+}
+header>img{
+    width: 100vw;
+}
+h2{
+    text-align: right;
+    font-size: 50px;
+    padding-right: 60px;
+    background-color:rgba(14, 14, 14, 1);
+    color: #fff;
+}
+.skill{
+    padding: 100px 0px;
+    background-color:rgba(14, 14, 14, 1);
+}
+.sub-head{
+    color: #fff;
+    padding-left: 50px;
+}
+
+.sub-head2,.sub-head3{
+    text-align: center;
+    color:#1a1a1a;
+    font-size: 50px;
+  padding-top: 50px;
+    font-family: machina;
+}
+.sub-head3{
+    background-color:rgba(14, 14, 14, 1);
+    color: #fff;
+    text-align: center;
+}
+.zt-skill-bar {
+    padding-left: 50px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 40px;
+    height: 50px;
+    margin-bottom: 5px;
+    background-color: rgba(0,0,0,0.1);
+
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+            border-radius: 2px;
+
+}
+.zt-skill-bar * {
+    -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+       -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+           transition: all 0.5s ease;
+}
+
+.zt-skill-bar div {
+    background-color: rgb(225, 62, 70);
+    position: relative;
+    padding-left: 25px;
+    width: 0;
+
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+            border-radius: 2px;
+}
+
+.zt-skill-bar span {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 5px 0 10px;
+    font-size: 17px;
+    background-color: #1a1a1a;
+
+    -webkit-border-radius: 0 2px 2px 0;
+       -moz-border-radius: 0 2px 2px 0;
+        -ms-border-radius: 0 2px 2px 0;
+            border-radius: 0 2px 2px 0;
+}
+
+.zt-skill-bar span:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    left: -3px;
+    margin-top: -3px;
+    background-color: #1a1a1a;
+
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+.work1{
+    display: flex;
+}
+.works>ul>li{
+    padding: 50px 0px;
+}
+.work-img{
+    position: relative;
+    width: 55%;
+    margin: 20px 0px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.work-img>img{
+    width: 100%;
+    object-fit: cover;
+
+}
+.work-text{
+    word-break: keep-all;
+width:40%;
+padding: 50px;
+}
+.work-text>a{
+    padding-top: 100px;
+}
+.work-text>ul{
+    margin: 10px 0px;
+    border-top: #1a1a1a 1px solid;
+    border-bottom: #1a1a1a 1px solid;
+    list-style-type: none;
+}
+.work-text>ul>li{
+    padding: 10px 0px;
+}
+.work2{
+    display: flex;
+    justify-content: center;
+}
+.work2>li{
+    padding: 20px !important;
+    list-style: none;
+    width: 45%;
+}
+.work2>li>div{
+    overflow: hidden;
+    height: 400px;
+}
+.work2>li>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.react>li{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.work2>li>p, .work2>li>a{
+display: block;
+    text-align: center;
+}
+.caption, .caption2{
+    position: absolute;
+    bottom: 20px;
+    right: -100px;
+    width:400px;
+}
+.caption2{
+    width:350px;
+    right: -150px;
+}
+.caption>img{
+    width: 100%;
+    object-fit: cover;
+}
+.caption2>img{
+    width: 100%;
+    object-fit: contain;
+}
+.graphic, .graphic2{
+    padding: 200px 0;
+    position: relative;
+    background-color: rgba(14, 14, 14, 1);
+}
+.graphic>div:nth-child(2){
+    position: absolute;
+    right: 100px;
+    bottom: 0px;
+}
+.graphic2>div:nth-child(2){
+    position: absolute;
+    bottom: 200px;
+    right: 100px;
+}
+.gra{
+    padding-left: 100px;
+}
+.graphic>div, .graphic2>div{
+    width: 40%;
+    overflow: hidden;
+}
+.graphic>div>img, .graphic2>div>img{
+    width: 100%;
+}
+.gra-text{
+    color: #fff;
+}
+.video{
+    justify-content: center;
+    display: flex;
+}
+.video>li{
+    padding: 25px;
+    list-style-type: none;
+}
+footer{
+    background-color:rgba(14, 14, 14, 1);
+    padding: 20px 0px;
+}
+footer>span{
+    font-size: 20px;
+    padding: 0px 30px;
+    color: #fff;
+}
