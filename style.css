@@ -2,7 +2,14 @@
     font-family: machina;
     src: url(./PPNeueMachina-PlainRegular.otf);
 }
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 *{
+    font-family: 'Pretendard-Regular';
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -40,8 +47,9 @@ h2{
     background-color:rgba(14, 14, 14, 1);
 }
 .sub-head{
+    font-size: 20px;
     color: #fff;
-    padding-left: 50px;
+    padding: 25px 0px 25px 50px;
 }
 
 .sub-head2,.sub-head3{
@@ -125,6 +133,9 @@ h2{
 .work1{
     display: flex;
 }
+.works>ul{
+    padding-bottom: 100px;
+}
 .works>ul>li{
     padding: 50px 0px;
 }
@@ -142,17 +153,35 @@ h2{
 }
 .work-text{
     word-break: keep-all;
-width:40%;
-padding: 50px;
+    width:40%;
+    padding: 50px;
+}
+.link{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: rgba(14, 14, 14, 1);
+    color: #fff;
+}
+.work-text>p>b{
+    display: block;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color:#1a1a1a;
+}
+.work-text>ul>b{
+    font-size: 20px;
+    padding-top: 20px;
+    color:#1a1a1a;
+    display: block;
 }
 .work-text>a{
-    padding-top: 100px;
+    text-decoration: none;
 }
 .work-text>ul{
     margin: 10px 0px;
-    border-top: #1a1a1a 1px solid;
-    border-bottom: #1a1a1a 1px solid;
     list-style-type: none;
+    padding-bottom: 20px;
 }
 .work-text>ul>li{
     padding: 10px 0px;
@@ -169,11 +198,16 @@ padding: 50px;
 .work2>li>div{
     overflow: hidden;
     height: 400px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+margin-bottom: 20px;
 }
 .work2>li>div>img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+}
+.react-works{
+    padding-bottom: 100px;
 }
 .react>li{
     padding: 100px 0;
@@ -182,18 +216,47 @@ padding: 50px;
     justify-content: center;
     align-items: center;
 }
-.work2>li>p, .work2>li>a{
-display: block;
+.react>li>p{
+        font-size: 30px;
+        color: #1a1a1a;
+        display: block;
+        text-align: center;
+}
+.work2>li{
     text-align: center;
+}
+.work2>li>a{  
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(14, 14, 14, 1);
+    color: #fff;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.detail>a{
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(14, 14, 14, 1);
+    color: #fff;
 }
 .caption, .caption2{
     position: absolute;
     bottom: 20px;
-    right: -100px;
+    right: -110px;
     width:400px;
 }
 .caption2{
-    width:350px;
+    width:42%;
     right: -150px;
 }
 .caption>img{
@@ -205,7 +268,7 @@ display: block;
     object-fit: contain;
 }
 .graphic, .graphic2{
-    padding: 200px 0;
+    padding: 0px 0px 200px 0;
     position: relative;
     background-color: rgba(14, 14, 14, 1);
 }
@@ -216,8 +279,19 @@ display: block;
 }
 .graphic2>div:nth-child(2){
     position: absolute;
-    bottom: 200px;
+    bottom: 300px;
     right: 100px;
+}
+.sub-head4, .sub-head5{
+    font-family: machina;
+  font-size: 100px;
+  padding: 80px 90px 10px 90px;
+  background-color: rgba(14, 14, 14, 1);
+  color: #fff;
+}
+.sub-head5{
+    padding-top: 200px;
+    text-align: right;
 }
 .gra{
     padding-left: 100px;
@@ -229,20 +303,43 @@ display: block;
 .graphic>div>img, .graphic2>div>img{
     width: 100%;
 }
+.graphic2>.gra-img>.gra-text{
+    padding-bottom: 20px ;
+}
 .gra-text{
+    font-size: 17px;
+    line-height: 1.7;
     color: #fff;
 }
 .video{
     justify-content: center;
     display: flex;
+    padding: 50px 0px 200px 0px;
+
 }
 .video>li{
     padding: 25px;
     list-style-type: none;
 }
+.video>li>iframe{
+    padding-bottom: 10px;
+}
+.video>li{
+    font-size: 17px;
+    text-align: center;
+    color: #888;
+}
+.v-t{
+    font-size: 20px;
+    padding-bottom: 5px;
+    color: #111;
+
+}
 footer{
+    display: flex;
     background-color:rgba(14, 14, 14, 1);
     padding: 20px 0px;
+    justify-content: space-between;
 }
 footer>span{
     font-size: 20px;
