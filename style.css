@@ -42,8 +42,37 @@ h2{
     background-color:rgba(14, 14, 14, 1);
     color: #fff;
 }
+.number{
+    text-align: right;
+    font-size: 21px;
+    padding: 10px 60px 200px 0px;
+    background-color:rgba(14, 14, 14, 1);
+    color: #fff;
+}
+.menu{
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.menu>ul{
+    display: flex;
+    background-color:rgba(14, 14, 14, 1);
+    justify-content: center;
+}
+.menu>ul>li{
+    list-style-type: none;
+    padding: 20px 20px;
+}
+.menu>ul>li>a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+.menu>ul>li>a:hover{
+    color:rgb(225, 62, 70);
+}
 .skill{
-    padding: 100px 0px;
+    padding: 200px 0px 100px 0px;
     background-color:rgba(14, 14, 14, 1);
 }
 .sub-head{
