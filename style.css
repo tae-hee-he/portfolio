@@ -19,35 +19,34 @@ body{
     overflow-x: hidden;
 }
 header{
+    display: flex;
+    justify-content: space-between;
     width: 100vw;
+    height: 300px;
     overflow-x: hidden;
     background-color:rgba(14, 14, 14, 1);
 }
 header>.title{
+    padding: 50px 0px 0px 50px;
     color: #f8f8f8;
     font-family: machina;
-    position: absolute;
     font-size: 160px;
-    top: 56px; 
-    left: 50px;
+
     letter-spacing :-0.045em;
 }
 header>img{
-    width: 100vw;
+    width: 35%;
+    height: auto;
 }
-h2{
-    text-align: right;
-    font-size: 50px;
-    padding-right: 60px;
-    background-color:rgba(14, 14, 14, 1);
-    color: #fff;
+.profile{
+    padding-top: 100px;
+    width: 100%;
+    background-color: rgba(14, 14, 14, 1);
+    display: flex;
+    justify-content: center;
 }
-.number{
-    text-align: right;
-    font-size: 21px;
-    padding: 10px 60px 200px 0px;
-    background-color:rgba(14, 14, 14, 1);
-    color: #fff;
+.profile>img{
+
 }
 .menu{
     position: sticky;
@@ -85,7 +84,7 @@ h2{
     text-align: center;
     color:#1a1a1a;
     font-size: 50px;
-  padding-top: 50px;
+  padding: 100px 0px ;
     font-family: machina;
 }
 .sub-head3{
